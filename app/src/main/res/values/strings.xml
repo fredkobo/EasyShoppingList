@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Easy Shopping List</string>
+    <string name="create_shopping_list">Create new shopping list</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="shopping_list_name">Shopping list name</string>
+    <string name="last_edited">Last edited %s"</string>string>
+</resources>
