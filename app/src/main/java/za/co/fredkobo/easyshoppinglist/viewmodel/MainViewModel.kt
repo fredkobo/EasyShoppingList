@@ -1,14 +1,14 @@
-package za.co.fredkobo.easyshoppinglist
+package za.co.fredkobo.easyshoppinglist.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import kotlin.collections.ArrayList
+import za.co.fredkobo.easyshoppinglist.model.ShoppingList
 
 
-class MainViewModel: ViewModel() {
+class MainViewModel : ViewModel() {
 
-    private var _list: MutableList<ShoppingList>
-    = mutableListOf(ShoppingList("Picknick shopping", System.currentTimeMillis(), ArrayList()))
+    private var _list: MutableList<ShoppingList> =
+        mutableListOf(ShoppingList("Picknick shopping", System.currentTimeMillis(), ArrayList()))
 
     val listOfShoppingLists: MutableLiveData<MutableList<ShoppingList>> by lazy {
         MutableLiveData<MutableList<ShoppingList>>()

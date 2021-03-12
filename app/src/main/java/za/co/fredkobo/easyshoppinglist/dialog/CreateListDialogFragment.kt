@@ -1,4 +1,4 @@
-package za.co.fredkobo.easyshoppinglist
+package za.co.fredkobo.easyshoppinglist.dialog
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,15 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
+import za.co.fredkobo.easyshoppinglist.R
+import za.co.fredkobo.easyshoppinglist.model.ShoppingList
 
 class CreateListDialogFragment : DialogFragment() {
 
     companion object {
         lateinit var createListInterface: CreateListDialogInterface
         fun newInstance(createListInterface: CreateListDialogInterface): CreateListDialogFragment {
-            this.createListInterface = createListInterface
+            Companion.createListInterface = createListInterface
             return CreateListDialogFragment()
         }
     }

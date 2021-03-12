@@ -1,10 +1,13 @@
-package za.co.fredkobo.easyshoppinglist
+package za.co.fredkobo.easyshoppinglist.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import za.co.fredkobo.easyshoppinglist.ListItemClickListener
+import za.co.fredkobo.easyshoppinglist.R
+import za.co.fredkobo.easyshoppinglist.model.ShoppingList
 import java.text.SimpleDateFormat
 import java.util.*
 
